@@ -1,0 +1,10 @@
+version: '3'
+services:
+    web:
+        container_name: synchronizer-playground
+        working_dir: /var/www/html
+        build: .
+        volumes:
+            - ./www:/var/www/html:delegated
+        ports:
+            - '80:80'
