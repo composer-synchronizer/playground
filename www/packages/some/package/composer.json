@@ -1,0 +1,19 @@
+{
+    "name": "some/package",
+    "extra": {
+        "composer-synchronizer": {
+            "nette2": {
+                "resources": {
+                    "composer-synchronizer/nette2/extension.neon": "%configDir%/some/package/extension.neon",
+                    "composer-synchronizer/nette2/webtemp/": "%wwwDir%/webtemp/"
+                },
+                "gitignore": [
+                    "%wwwDir%/webtemp/"
+                ],
+                "includes": [
+                    "some/package/extension.neon"
+                ]
+            }
+        }
+    }
+}
